@@ -77,7 +77,7 @@
 ## Quick Start
 
 ```bash
-git clone [https://github.com/theutkarshnode/datapulse-ai.git](https://github.com/theutkarshnode/datapulse-ai.git)
+git clone https://github.com/theutkarshnode/datapulse-ai.git
 cd datapulse-ai
 
 python -m venv venv

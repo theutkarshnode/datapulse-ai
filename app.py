@@ -1,4 +1,6 @@
 import os
+os.environ.setdefault("MPLCONFIGDIR", "/tmp/matplotlib")
+import os
 import shutil
 import asyncio
 from fastapi import FastAPI, UploadFile, File, WebSocket

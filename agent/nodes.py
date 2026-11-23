@@ -127,7 +127,7 @@ def executor_node(state: AgentState) -> dict:
             [sys.executable, "-c", safe_code],
             capture_output=True,
             text=True,
-            timeout=20
+            timeout=45
         )
         if result.returncode == 0:
             charts = sorted(glob.glob("outputs/chart*.png"))

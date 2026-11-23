@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#070B14"/>
+      <stop offset="50%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#1E1B4B"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="50%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="300" rx="16" fill="url(#bg)"/>
+  <rect width="1200" height="300" rx="16" fill="url(#grid)" opacity="0.5"/>
+  <circle cx="1050" cy="60" r="180" fill="#3B82F6" opacity="0.12"/>
+  <circle cx="150" cy="260" r="160" fill="#6366F1" opacity="0.12"/>
+  <rect x="60" y="54" width="190" height="32" rx="16" fill="#1E293B" stroke="#38BDF8" stroke-width="1"/>
+  <text x="155" y="75" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#38BDF8" text-anchor="middle" letter-spacing="1">ENTERPRISE AI AGENT</text>
+  <text x="60" y="142" font-family="system-ui, sans-serif" font-size="52" font-weight="800" fill="#F8FAFC" letter-spacing="-1">DataPulse <tspan fill="url(#accent)">AI</tspan></text>
+  <text x="60" y="182" font-family="system-ui, sans-serif" font-size="20" fill="#94A3B8">Autonomous Self-Healing Data Analyst + Executive Visualization Studio</text>
+  <g font-family="system-ui, sans-serif" font-size="13" font-weight="600">
+    <rect x="60" y="218" width="165" height="34" rx="8" fill="#0F172A" stroke="#334155"/>
+    <text x="142" y="240" fill="#E2E8F0" text-anchor="middle">LangGraph Cyclic Flow</text>
+    <rect x="240" y="218" width="175" height="34" rx="8" fill="#0F172A" stroke="#334155"/>
+    <text x="327" y="240" fill="#E2E8F0" text-anchor="middle">Isolated Python Sandbox</text>
+    <rect x="430" y="218" width="165" height="34" rx="8" fill="#0F172A" stroke="#334155"/>
+    <text x="512" y="240" fill="#E2E8F0" text-anchor="middle">Zero-Hallucination BI</text>
+    <rect x="610" y="218" width="175" height="34" rx="8" fill="#0F172A" stroke="#334155"/>
+    <text x="697" y="240" fill="#E2E8F0" text-anchor="middle">Live WebSocket Stream</text>
+  </g>
+</svg>

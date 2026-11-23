@@ -1,5 +1,14 @@
 <div align="center">
 
+**Live Deployment:** [https://datapulse-ai-u4az.onrender.com](https://datapulse-ai-u4az.onrender.com)  
+**Developed By:** Utkarsh Tiwari | **Reg. No:** `72513639` | **Program:** BCA (AI & Data Science), CT University
+
+</div>
+
+---
+
+<div align="center">
+
 <img src="assets/banner.svg" alt="DataPulse AI Banner" width="100%" />
 
 <br /><br />

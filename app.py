@@ -1,3 +1,11 @@
+try:
+    import spaces
+    @spaces.GPU
+    def _hf_zero_gpu_stub():
+        pass
+except Exception:
+    pass
+
 import os
 os.environ.setdefault("MPLCONFIGDIR", "/tmp/matplotlib")
 import os

@@ -95,7 +95,7 @@ def coder_node(state: AgentState) -> dict:
 
     prompt = f"""
     You are a Principal Data Scientist building executive-grade analytics visuals.
-    Write a concise, standalone Python script using pandas and matplotlib to answer the user's request.
+    Write a concise, standalone Python script using pandas and CRITICAL: Keep total Python script under 75 lines. Never write custom string-splitting functions. For messy currency, range, or percentage columns (like '$50,000+', '$100 - $149 / hr', '10%'), extract the first number in one line: pd.to_numeric(df[col].astype(str).str.replace(',', '').str.extract(r'(\d+\.?\d*)')[0], errors='coerce'). matplotlib to answer the user's request.
 
     CSV Path: "{state['csv_path']}"
     Dataset Schema & Sample:
@@ -110,7 +110,7 @@ def coder_node(state: AgentState) -> dict:
     3. Visual Design Standards:
        - Clean white background (#FFFFFF), remove top and right spines, subtle light gridlines (alpha=0.3).
        - Palette: Royal Blue (#2563EB), Indigo (#4F46E5), Sky Blue (#0EA5E9), Deep Navy (#0F172A).
-       - Save charts at dpi=110, bbox_inches='tight'.
+       - Save charts at dpi=100, bbox_inches='tight'.
        - If multiple charts are requested, save them as "outputs/chart_1.png", "outputs/chart_2.png", "outputs/chart_3.png", "outputs/chart_4.png" using DIVERSE chart types (Bar, Donut/Pie, Horizontal Bar, Line). Otherwise save "outputs/chart_1.png".
        - Always call plt.close() after each figure.
     4. Return ONLY valid Python code inside ```python ``` blocks. Keep the code clean and concise.

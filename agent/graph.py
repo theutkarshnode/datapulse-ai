@@ -9,7 +9,7 @@ from agent.nodes import (
 
 def should_retry(state: AgentState) -> str:
     """Agar error aaya hai aur retries 3 se kam hain, toh wapas coder pe bhejo."""
-    if state.get("error") and state.get("retries", 0) < 3:
+    if state.get("error") and state.get("retries", 0) < 1:
         return "coder"
     return "summarizer"
 

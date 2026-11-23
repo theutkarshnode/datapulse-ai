@@ -43,8 +43,8 @@ def _call_llm(prompt: str) -> str:
                 model=model_id,
                 messages=[{"role": "user", "content": prompt}],
                 temperature=0.1,
-                max_tokens=2048,
-                timeout=45,
+                max_tokens=4096,
+                timeout=25,
             )
             content = response.choices[0].message.content
             if not content:
@@ -110,7 +110,7 @@ def coder_node(state: AgentState) -> dict:
     3. Visual Design Standards:
        - Clean white background (#FFFFFF), remove top and right spines, subtle light gridlines (alpha=0.3).
        - Palette: Royal Blue (#2563EB), Indigo (#4F46E5), Sky Blue (#0EA5E9), Deep Navy (#0F172A).
-       - Save charts at dpi=160, bbox_inches='tight'.
+       - Save charts at dpi=110, bbox_inches='tight'.
        - If multiple charts are requested, save them as "outputs/chart_1.png", "outputs/chart_2.png", "outputs/chart_3.png", "outputs/chart_4.png" using DIVERSE chart types (Bar, Donut/Pie, Horizontal Bar, Line). Otherwise save "outputs/chart_1.png".
        - Always call plt.close() after each figure.
     4. Return ONLY valid Python code inside ```python ``` blocks. Keep the code clean and concise.
@@ -127,7 +127,7 @@ def executor_node(state: AgentState) -> dict:
             [sys.executable, "-c", safe_code],
             capture_output=True,
             text=True,
-            timeout=45
+            timeout=25
         )
         if result.returncode == 0:
             charts = sorted(glob.glob("outputs/chart*.png"))

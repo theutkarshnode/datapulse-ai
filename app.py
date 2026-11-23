@@ -80,3 +80,7 @@ async def agent_ws(ws: WebSocket):
 
     except Exception as e:
         await ws.send_json({"type": "error", "text": f"Runtime Error: {str(e)}"})
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=int(os.environ.get("PORT", 7860)))

@@ -1,0 +1,13 @@
+Month,Product,Region,Units_Sold,Revenue_INR
+Jan,Laptop,North,45,2250000
+Jan,Phone,South,120,2400000
+Feb,Laptop,North,38,1900000
+Feb,Phone,West,140,2800000
+Mar,Laptop,South,60,3000000
+Mar,Headphones,East,210,630000
+Apr,Laptop,West,75,3750000
+Apr,Phone,North,160,3200000
+May,Laptop,North,50,2500000
+May,Headphones,South,190,570000
+Jun,Phone,East,200,4000000
+Jun,Laptop,South,85,4250000
